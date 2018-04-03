@@ -39,11 +39,11 @@ Please refer to the Help text for complete list of available arguments.
 ```
 	$ pip install tabulate
 ```
-6. Install PyInstaller to create a command line interface wrapper.
+6. Install PyInstaller to create a Windows command line tool.
 ```
 	$ pip install pyinstaller
 ```
-7. Two options to create command line interface wrapper.
+7. Two options to create the command line tool.
 
 - Bundle query.py and all its dependencies into a single executable named ```query.exe```.
 ```
@@ -77,7 +77,7 @@ It is better to create a batch file ```query.bat``` in the ```dist``` folder tha
 	echo %errorlevel%
 	2
 ```
-2. Run the tool with -h argument to display Help
+2. Run the tool with -h argument to display Help text
 ```
 	query -h
 		usage: query [-h] [-f {tabular,csv}] [-e {presto,hive}] [-c COL_LIST]
