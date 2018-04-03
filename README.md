@@ -43,7 +43,7 @@ Please refer to the Help text for complete list of available arguments.
 ```
 	$ pip install pyinstaller
 ```
-7. Download ```query.py``` and create the command line tool ```query.ext``` using one of the two options:
+7. Download ```query.py``` and create the command line tool ```query.exe``` using one of the two options:
 
 - Bundle query.py and all its dependencies into a single executable named ```query.exe```.
 ```
@@ -57,7 +57,7 @@ The query.exe in the ```dist``` folder is the single executable that can be dist
 ```
 The folder ```query``` found in the ```dist``` folder can be distributed to other users who do not have the dependencies installed.  The executable file named ```query.exe``` is in the folder ```query```.
 
-It is recommended to create a batch file ```query.bat``` in the ```dist``` folder that will execute ```query\query.exe```.  The content of ```query.bat``` is shown below:
+It is recommended to create a batch file ```query.bat``` in the ```dist``` folder that will execute ```query.exe```.  The content of ```query.bat``` is shown below:
 ```
 	@echo off
 	set arg=%*
