@@ -1,8 +1,6 @@
 # td-query
 Windows command line tool that issues a query on Treasure Data
 
-# Quick Start Guide
-
 The query.exe is a Windows command line tool that issues a query on Treasure Data 
 and queries a database and a table to retrieve the records based on other optional
 set of arguments.
@@ -12,7 +10,7 @@ specify database name and table name along with optional arguments, for example
 list of columns, timestamp, etc.  Please refer to the Help text for complete list 
 of available arguments.
 
-# Requirements
+## Requirements
 
 You need a Treasure Data account and a valid API key.
 
@@ -23,23 +21,15 @@ For example,
 	echo %TD_API_KEY%
   4321/9b4b781f9ab9e46c0b0555abef185dc123456789
   
-# Installation
+## Installation
 
 Two installation options
 
-1. Download query.exe and run it on your Windows without any installation.
+1. Download query.exe and run it on your Windows without any installation.  The query.exe is a single executable that bundled the codes and all of its dependencies.  However, this single executables is slower to start up (approximately 30-60 seconds on our test server) than the second option because it uncompresses all dependencies at the beginning of every run.
 
-The query.exe is a single executable that bundled the codes and all of its dependencies.
+2. Download query.zip and unzip it on your Windows without any installation.  Run query.bat in the query folder.
 
-However, this single executables is slower to start up (approximately 30-60 seconds
-on our test server) than the second option because it uncompresses all dependencies
-at the beginning of every run.
-
-2. Download query.zip and unzip it on your Windows without any installation.
-
-Run query.bat in the query folder.
-
-# Examples
+## Examples
 
 1. Run the tool without any arguments throws error, but short usage text is displayed
 
