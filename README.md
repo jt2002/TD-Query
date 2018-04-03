@@ -3,7 +3,7 @@ Windows command line tool that issues a query on Treasure Data
 
 ### Description
 
-The query.exe is a Windows command line tool that issues a query on Treasure Data and queries a database and a table to retrieve the records based on other optional set of arguments.
+The query.exe is a Windows command line tool that issues a query on Treasure Data to retrieve the records based on other optional set of arguments.
 
 The tool uses the Treasure Data's Python Client Library.  It requires the user to specify database name and table name along with optional arguments, for example list of columns, timestamp, etc.  
 
@@ -11,15 +11,14 @@ Please refer to the Help text for complete list of available arguments.
 
 ### Requirements
 
-A Treasure Data account and a valid API key are required.
+1. A Treasure Data account
+2. A valid API key
 
-Please set the environment variable TD_API_KEY for the API key.
-
-For example, to view the API key
-
+Please set the environment variable TD_API_KEY for the API key, for example,
+```
 	echo %TD_API_KEY%
 	4321/9b4b781f9ab9e46c0b0555abef185dc123456789
-  
+```  
 ### Installation
 
 Two installation options
