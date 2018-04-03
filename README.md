@@ -1,6 +1,6 @@
 # td-query
 
-The query.py is a Python script that issues a query on Treasure Data to retrieve the records.  It utilizes Treasure Data's Python Client Library, and requires the user to specify database name and table name along with optional arguments, for example list of columns, timestamp, etc.  
+The query.py is a Python script that issues a query to retrieve the records from Treasure Data.  It utilizes Treasure Data's Python Client Library, and requires the user to specify database name and table name along with optional arguments.  
 
 Please refer to the Help text for complete list of available arguments.
 
@@ -15,47 +15,47 @@ Please refer to the Help text for complete list of available arguments.
 - A Treasure Data account
 - A valid API key
 
-Please set the environment variable TD_API_KEY for the API key, for example,
+### Install
+
+1. Sign up for [an account](https://console.treasuredata.com/app/), [retrieve the API key](https://docs.treasuredata.com/articles/get-apikey), and set the environment variable ```TD_API_KEY```, for example,
 ```
 	echo %TD_API_KEY%
 	4321/9b4b781f9ab9e46c0b0555abef185dc123456789
 ```  
-### Install
-
-1. Install the release of Python Client Library from [PyPI](https://pypi.python.org/pypi/).
+2. Install the release of Python Client Library from [PyPI](https://pypi.python.org/pypi/).
 ```
 	$ pip install td-client
 ```
-2. Install [certifi](https://pypi.python.org/pypi/certifi) to enable SSL certificate verification.
+3. Install [certifi](https://pypi.python.org/pypi/certifi) to enable SSL certificate verification.
 ```
 	$ pip install certifi
 ```
-3. Install pandas to utilized the DataFrame
+4. Install pandas to utilized the DataFrame
 ```
 	$ pip install pandas
 ```
-4. Install tabulate to display data in tabular format
+5. Install tabulate to display data in tabular format
 ```
 	$ pip install tabulate
 ```
-5. Install pyinstaller to create a command line interface wrapper
+6. Install pyinstaller to create a command line interface wrapper
 ```
 	$ pip install pyinstaller
 ```
-6. Two options to create command line interface wrapper
+7. Two options to create command line interface wrapper
 
 - Bundle query.py and all its dependencies into a single executable named ```query.exe```
 ```
 	$ pyinstaller --onefile query.py
 ```
-The query.exe can be found in the ```dist``` folder.  Since the single executable bundles all of its dependencies and has to uncompress all dependencies at the beginnnig of every run, it is slower to start up (approximately 30-60 seconds in our test) than the second option.
+The query.exe can be found in the ```dist``` folder.  Since the single executable bundles all of its dependencies and has to uncompress them at the beginnnig of every run, it is slower to start up (approximately 30-60 seconds in our test) than the second option.
 
 - Bundle query.py and all its dependencies into a single folder.  This folder contains all script’s dependencies.
 ```
 	$ pyinstaller --onedir query.py
 ```
 The folder ```query``` can be found in the ```dist``` folder.  The executable file named ```query.exe``` can be found in the folder ```query```.
-It is better to create a batch file ```query.bat``` in the ```dist``` folder that will execute the executable ```query/query.exe```
+It is better to create a batch file ```query.bat``` in the ```dist``` folder that will execute the executable ```query\query.exe```
 ```
 	@echo off
 	set arg=%*
