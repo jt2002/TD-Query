@@ -1,3 +1,4 @@
+
 # td-query
 
 The query.py is a Python script that issues a query to retrieve the records from Treasure Data.  It utilizes Treasure Data's Python Client Library, and requires the user to specify database name and table name along with optional arguments.  
@@ -6,14 +7,14 @@ Please refer to the Help text for complete list of available arguments.
 
 ### Requirements
 
+- Treasure Data account
+- Valid API key
 - Python 3.3+
 - PyPI
 - Treasure Data's Python Client Library
 - Pandas
 - Tabulate
 - PyInstaller
-- A Treasure Data account
-- A valid API key
 
 ### Install
 
@@ -30,15 +31,15 @@ Please refer to the Help text for complete list of available arguments.
 ```
 	$ pip install certifi
 ```
-4. Install pandas to utilized the DataFrame.
+4. Install Pandas to utilized the DataFrame.
 ```
 	$ pip install pandas
 ```
-5. Install tabulate to display data in tabular format.
+5. Install Tabulate to display data in tabular format.
 ```
 	$ pip install tabulate
 ```
-6. Install pyinstaller to create a command line interface wrapper.
+6. Install PyInstaller to create a command line interface wrapper.
 ```
 	$ pip install pyinstaller
 ```
