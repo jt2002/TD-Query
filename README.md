@@ -43,20 +43,21 @@ Please refer to the Help text for complete list of available arguments.
 ```
 	$ pip install pyinstaller
 ```
-7. Two options to create the command line tool.
+7. Download ```query.py``` and create the command line tool ```query.ext``` using one of the two options:
 
 - Bundle query.py and all its dependencies into a single executable named ```query.exe```.
 ```
 	$ pyinstaller --onefile query.py
 ```
-The query.exe can be found in the ```dist``` folder.  Since the single executable bundles all of its dependencies and has to uncompress them at the beginnnig of every run, it is slower to start up (approximately 30-60 seconds in our test) than the second option.
+The query.exe in the ```dist``` folder is the single executable that can be distributed to other users who do not have the dependencies installed.  Since the tool has to uncompress them at the beginnnig of every run, it is slower to start up (approximately 30-60 seconds in our tests) than the second option.
 
 - Bundle query.py and all its dependencies into a single folder.  This folder contains all script’s dependencies.
 ```
 	$ pyinstaller --onedir query.py
 ```
-The folder ```query``` can be found in the ```dist``` folder.  The executable file named ```query.exe``` can be found in the folder ```query```.
-It is better to create a batch file ```query.bat``` in the ```dist``` folder that will execute the executable ```query\query.exe```.
+The folder ```query``` found in the ```dist``` folder can be distributed to other users who do not have the dependencies installed.  The executable file named ```query.exe``` is in the folder ```query```.
+
+It is recommended to create a batch file ```query.bat``` in the ```dist``` folder that will execute ```query\query.exe```.  The content of ```query.bat``` is shown below:
 ```
 	@echo off
 	set arg=%*
