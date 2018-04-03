@@ -22,7 +22,7 @@ Please refer to the Help text for complete list of available arguments.
 	echo %TD_API_KEY%
 	4321/9b4b781f9ab9e46c0b0555abef185dc123456789
 ```  
-2. Install the release of Python Client Library from [PyPI](https://pypi.python.org/pypi/).
+2. Install the release of Python Client Library from [PyPI](https://pypi.python.org/pypi).
 ```
 	$ pip install td-client
 ```
@@ -30,21 +30,21 @@ Please refer to the Help text for complete list of available arguments.
 ```
 	$ pip install certifi
 ```
-4. Install pandas to utilized the DataFrame
+4. Install pandas to utilized the DataFrame.
 ```
 	$ pip install pandas
 ```
-5. Install tabulate to display data in tabular format
+5. Install tabulate to display data in tabular format.
 ```
 	$ pip install tabulate
 ```
-6. Install pyinstaller to create a command line interface wrapper
+6. Install pyinstaller to create a command line interface wrapper.
 ```
 	$ pip install pyinstaller
 ```
-7. Two options to create command line interface wrapper
+7. Two options to create command line interface wrapper.
 
-- Bundle query.py and all its dependencies into a single executable named ```query.exe```
+- Bundle query.py and all its dependencies into a single executable named ```query.exe```.
 ```
 	$ pyinstaller --onefile query.py
 ```
@@ -55,7 +55,7 @@ The query.exe can be found in the ```dist``` folder.  Since the single executabl
 	$ pyinstaller --onedir query.py
 ```
 The folder ```query``` can be found in the ```dist``` folder.  The executable file named ```query.exe``` can be found in the folder ```query```.
-It is better to create a batch file ```query.bat``` in the ```dist``` folder that will execute the executable ```query\query.exe```
+It is better to create a batch file ```query.bat``` in the ```dist``` folder that will execute the executable ```query\query.exe```.
 ```
 	@echo off
 	set arg=%*
