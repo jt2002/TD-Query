@@ -1,7 +1,7 @@
 
-# td-query
+# TD Query
 
-The query.py is a Python script that issues a query to retrieve the records from Treasure Data.  It utilizes Treasure Data's Python Client Library, and requires the user to specify database name and table name along with optional arguments.  
+query.py is Python script that utilizes Treasure Data's Python Client Library to pull the data from Treasure Data repository.  Database name and table name are required arguments.
 
 Please refer to the Help text for complete list of available arguments.
 
